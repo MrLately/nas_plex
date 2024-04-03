@@ -1,7 +1,7 @@
-# Raspberry Pi NAS/PLEX Setup Script
+# Raspberry Pi SAMBA NAS/PLEX Setup Script
 
 This script automates the setup process for creating a Network-Attached Storage (NAS) server using a Raspberry Pi.
-It installs necessary packages, mounts an external drive for storage, configures a Samba share for file sharing,
+It installs necessary packages, mounts an external drive for storage (which you select), configures a Samba share for file sharing,
 and installs Plex Media Server for media streaming.
 
 ## Prerequisites
@@ -36,6 +36,9 @@ mkdir -p /mnt/ninnie/Movies
 mkdir -p /mnt/ninnie/Series
 mkdir -p /mnt/ninnie/Pictures
 mkdir -p /mnt/ninnie/Documents
+
+To edit the SAMBA config further run:
+sudo nano /etc/samba/smb.conf
 
 #### Accessing the Samba Share
 
