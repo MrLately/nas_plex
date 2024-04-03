@@ -32,6 +32,7 @@ sudo ./nas_plex.sh
 
 ### Further Configuration
 I ran these after setup because they are what i wanted, you may want different:
+
 mkdir -p /mnt/ninnie/Movies
 mkdir -p /mnt/ninnie/Series
 mkdir -p /mnt/ninnie/Pictures
