@@ -15,6 +15,8 @@ Before running the script, make sure to adjust the configuration variables in th
 
 - `MOUNT_POINT`: The directory where the external drive will be mounted.
 - `SHARE_NAME`: The name of the Samba share.
+- `USER_NAME`: Pi username. pi by default.
+- `GROUP_NAME`: Pi groupname. pi by default.
 
 ## Usage
 
