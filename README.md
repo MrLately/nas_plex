@@ -11,7 +11,8 @@ and installs Plex Media Server for media streaming.
 
 ## Configuration
 
-Before running the script, make sure to adjust the configuration variables in the script according to your preferences:
+Before running the script, make sure to adjust the configuration variables in the script
+according to your preferences (can leave default):
 
 - `MOUNT_POINT`: The directory where the external drive will be mounted.
 - `SHARE_NAME`: The name of the Samba share.
