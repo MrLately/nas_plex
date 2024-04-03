@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Configuration variables
-MOUNT_POINT="/mnt/ninnie"
-SHARE_NAME="ninnie"
+MOUNT_POINT="/mnt/nas"
+SHARE_NAME="nas"
 
 # Ensure the script is run as root
 if [ "$(id -u)" != "0" ]; then
@@ -14,9 +14,9 @@ fi
 echo "Updating and upgrading Raspberry Pi OS..."
 apt-get update && apt-get upgrade -y
 
-# Detect and list all connected external drives with their names and sizes
+# Detect and list all connected external drives with their names, sizes, and models
 echo "Detecting connected external drives..."
-lsblk -o NAME,SIZE -dp | grep -v "boot\|root" | grep -E "sd[a-z]$" | awk '{print $1, $2}' 
+lsblk -o NAME,SIZE,MODEL -dp | grep -v "boot\|root" 
 echo "Please enter the device name to use (e.g., /dev/sda):"
 read -r SSD_DEVICE
 
@@ -52,7 +52,7 @@ mount -a
 echo "Installing Samba..."
 apt-get install samba samba-common-bin -y
 
-# Configure Samba Share named "Media"
+# Configure Samba Share named "ninnie"
 echo "Configuring Samba Share named $SHARE_NAME for $MOUNT_POINT..."
 cat >> /etc/samba/smb.conf <<EOT
 
