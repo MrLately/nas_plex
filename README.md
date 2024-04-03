@@ -54,6 +54,7 @@ Once the setup is complete, you can access the Samba share from any device on yo
 2. Enter the following address in the address bar:
    \\RASPBERRY_PI_IP\SHARE_NAME
 Replace `RASPBERRY_PI_IP` with the IP address of your Raspberry Pi and `SHARE_NAME` with the configured share name.
+<img width="321" alt="gh" src="https://github.com/MrLately/nas_plex/assets/94589563/483a8e53-77b5-4900-86c6-9aa2a09f86fb">
 
 #### Using Plex Media Server
 
