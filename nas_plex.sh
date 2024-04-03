@@ -3,6 +3,8 @@
 # Configuration variables
 MOUNT_POINT="/mnt/nas"
 SHARE_NAME="nas"
+USER_NAME="pi" # Default user
+GROUP_NAME="pi" # Default group
 
 # Ensure the script is run as root
 if [ "$(id -u)" != "0" ]; then
@@ -64,8 +66,8 @@ directory mask=0777
 public=yes
 browsable=yes
 guest ok=yes
-force user=pi
-force group=pi
+force user=$USER_NAME
+force group=$GROUP_NAME
 EOT
 
 # Restart Samba to apply the configuration
