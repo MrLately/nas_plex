@@ -64,6 +64,8 @@ directory mask=0777
 public=yes
 browsable=yes
 guest ok=yes
+force user=pi
+force group=pi
 EOT
 
 # Restart Samba to apply the configuration
