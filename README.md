@@ -6,7 +6,7 @@ and installs Plex Media Server for media streaming.
 
 ## Prerequisites
 
-- Raspberry Pi running Raspberry Pi OS (previously Raspbian)
+- Raspberry Pi (4 2gb or higher) running Raspberry Pi OS (I went with legacy 64 bit lite)
 - External storage device (SSD or hard drive)
 
 ## Configuration
