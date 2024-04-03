@@ -58,6 +58,8 @@ Once the setup is complete, you can access the Samba share from any device on yo
    \\RASPBERRY_PI_IP\SHARE_NAME
 Replace `RASPBERRY_PI_IP` with the IP address of your Raspberry Pi and `SHARE_NAME` with the configured share name.
 <img width="321" alt="gh" src="https://github.com/MrLately/nas_plex/assets/94589563/483a8e53-77b5-4900-86c6-9aa2a09f86fb">
+<img width="674" alt="gh" src="https://github.com/MrLately/nas_plex/assets/94589563/1866ced2-ed14-4b6a-abd9-422577fe0f0e">
+
 
 #### Using Plex Media Server
 
